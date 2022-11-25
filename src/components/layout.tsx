@@ -1,4 +1,6 @@
 import * as React from 'react';
+import Footer from './footer';
+import Header from './header';
 
 interface LayoutProps {
   children: React.ReactNode
@@ -7,10 +9,12 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   
   return (
-    <div className="min-h-screen bg-dark">
-      <main className='container'>
+    <div className="container m-auto min-h-screen">
+      <Header />
+      <main>
         {children}
       </main>
+      <Footer />
     </div>
   )
 
