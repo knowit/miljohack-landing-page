@@ -1,14 +1,18 @@
 import * as React from 'react';
+import { splitByNumWords } from '../utils';
+import Link from './util/Link';
 
-const HeroSection: React.FC<{}> = () => {
+const HeroSection: React.FC<Queries.FrontpageSections> = (props) => {
+  const headingArray = splitByNumWords(props.heading ?? '', 5);
+
   return (
     <div className="mb-72">
       <div>
         <h1 className="text-7xl text-green font-bold">
-          Sitter du på en problemstilling{' '}
-          <span className="text-green-dark">innenfor bærekraft, miljø eller klima?</span>
+          {headingArray[0] + ' '}
+          <span className="text-green-dark">{headingArray[1]}</span>
         </h1>
-        <p className="text-red">16. til 19. mars 2023</p>
+        <p className="text-red">{props.subheading}</p>
       </div>
       <div className="flex gap-16 mt-16">
         <svg width="312" height="207" viewBox="0 0 312 207" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,10 +57,15 @@ const HeroSection: React.FC<{}> = () => {
           />
         </svg>
         <div className="text-2xl font-bold">
-          <p className="text-green mb-8">
-            Vi inviterer din bedrift til å levere og presentere interessante miljø-problemstillinger for deltakerne.
-          </p>
-          <button className="underline bg-green text-gray-dark p-4">Send din søknad</button>
+          <p className="text-green mb-8">{props.body}</p>
+          <Link
+            to={props.link?.path ?? undefined}
+            className="p-4 w-fit"
+            activeClassName="underline bg-green text-gray-dark"
+            disabledClassName="border text-green"
+          >
+            {props.link?.text}
+          </Link>
         </div>
       </div>
     </div>

@@ -1,19 +1,20 @@
 import * as React from 'react';
+import Link from './util/Link';
 
-const Section: React.FC<{ alternate?: boolean }> = ({ alternate = false }) => {
+type SectionProps = Queries.FrontpageSections & { alternate?: boolean }
+
+const Section: React.FC<SectionProps> = ({ alternate = false, ...props }) => {
   return (
     <div className="flex gap-16 my-16 py-16">
-      {alternate && <PlaceholderArt />}
-      <div className="w-1/2 flex flex-col gap-4">
-        <h1 className="text-5xl text-green">Hva er miljøhack?</h1>
-        <p className="text-xl">
-          Miljøhack er et hackathon hvor Knowits ansatte jobber dedikert tverrfaglige team med å løse miljørelaterte
-          problemstillinger. Ved å bruke kunnskapen på tvers av design og utvikling kan man komme frem til løsninger som
-          ikke bare løser problemene til folk, men også kloden.
-        </p>
-        <button className="text-2xl underline p-4">Les om Miljøhack 2023</button>
-      </div>
       {!alternate && <PlaceholderArt />}
+      <div className="w-1/2 flex flex-col gap-4">
+        <h1 className="text-5xl text-green">{props.heading}</h1>
+        <p className="text-xl">
+          {props.body}
+        </p>
+        <Link to={props.link!.path!} className="text-2xl underline text-center p-4" >{props.link?.text}</Link> 
+      </div>
+      {alternate && <PlaceholderArt />}
     </div>
   );
 };

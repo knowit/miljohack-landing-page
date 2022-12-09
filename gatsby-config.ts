@@ -1,4 +1,4 @@
-import type { GatsbyConfig } from 'gatsby';
+import type { GatsbyConfig, Node } from 'gatsby';
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -16,6 +16,18 @@ const config: GatsbyConfig = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
+      resolve: 'gatsby-transformer-yaml',
+      options: {
+        typeName: ({ node }: { node: Node }) => {
+          const name = node.name;
+          if (name === 'index') {
+            return 'Frontpage';
+          }
+          return name;
+        }
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
@@ -30,6 +42,14 @@ const config: GatsbyConfig = {
         path: './src/pages/'
       },
       __key: 'pages'
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'data',
+        path: './src/data/'
+      },
+      __key: 'data'
     }
   ]
 };

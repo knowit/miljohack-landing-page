@@ -1,9 +1,9 @@
 {
-  "name": "milj-hack",
+  "name": "miljohack",
   "version": "1.0.0",
   "private": true,
-  "description": "milj-hack",
-  "author": "Christopher Gjøvåg",
+  "description": "Miljøhack landingsside. Laget med Gatsby",
+  "author": "Christopher Gjøvåg (christopher.gjovag@knowit.no)",
   "keywords": [
     "gatsby"
   ],
@@ -22,6 +22,8 @@
     "gatsby-source-filesystem": "^5.1.0",
     "gatsby-transformer-remark": "^6.1.0",
     "gatsby-transformer-sharp": "^5.1.0",
+    "gatsby-transformer-yaml": "^5.2.0",
+    "lines-to-paragraphs": "^1.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

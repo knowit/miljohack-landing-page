@@ -1,14 +1,23 @@
 import React from 'react';
+// @ts-ignore
+import paragraphs from 'lines-to-paragraphs';
+import Link from './util/Link';
 
-const Card: React.FC = () => {
+type CardProps = Queries.FrontpageCards;
+
+const Card: React.FC<CardProps> = ({ body, link }) => {
   return (
     <div className="flex items-center border-t-8 border-l-8 border-green my-16">
-      <div className="flex-grow text-2xl text-green font-bold m-8">
-        <p>Er du designer, utvikler, potet eller har en annen rolle i Knowit? Alle er velkomne til å delta!</p>
-        <p className="mt-8">
-          Miljøhack 2023 vil foregå fra 16. mars til 19. mars på Quality Hotel Entry på Trollåsen, Eidsvoll
-        </p>
-        <button className="border mt-8 p-4">Påmelding kommer snart...</button>
+      <div className="flex-grow text-2xl font-bold m-8">
+        <div className="flex flex-col gap-8 text-green" dangerouslySetInnerHTML={{ __html: paragraphs(body) }} />
+          <Link 
+            to={link?.path!} 
+            className="mt-8 p-4 w-fit"
+            activeClassName="bg-green text-gray-dark underline"
+            disabledClassName='border text-green'
+            >
+            {link?.text}
+          </Link>
       </div>
       <Icon />
     </div>
