@@ -16,7 +16,7 @@ const config: GatsbyConfig = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
-      resolve: 'gatsby-transformer-yaml',
+      resolve: 'transformer-yaml',
       options: {
         typeName: ({ node }: { node: Node }) => {
           const name = node.name;

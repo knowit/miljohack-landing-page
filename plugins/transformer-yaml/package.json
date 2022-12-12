@@ -1,0 +1,15 @@
+{
+  "name": "transformer-yaml",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "remark": "^14.0.0",
+    "remark-html": "^13.0.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^5.0.0"
+  }
+}
