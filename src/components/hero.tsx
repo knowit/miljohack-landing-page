@@ -57,7 +57,7 @@ const HeroSection: React.FC<Queries.FrontpageSections> = (props) => {
           />
         </svg>
         <div className="text-2xl font-bold">
-          <p className="text-green mb-8">{props.body}</p>
+          <div className="text-green mb-8" dangerouslySetInnerHTML={{ __html: props.body! }} />
           <Link
             to={props.link?.path ?? undefined}
             className="p-4 w-fit"

@@ -1,6 +1,4 @@
 import React from 'react';
-// @ts-ignore
-import paragraphs from 'lines-to-paragraphs';
 import Link from './util/Link';
 
 type CardProps = Queries.FrontpageCards;
@@ -9,7 +7,7 @@ const Card: React.FC<CardProps> = ({ body, link }) => {
   return (
     <div className="flex items-center border-t-8 border-l-8 border-green my-16">
       <div className="flex-grow text-2xl font-bold m-8">
-        <div className="flex flex-col gap-8 text-green" dangerouslySetInnerHTML={{ __html: paragraphs(body) }} />
+        <div className="flex flex-col gap-8 text-green" dangerouslySetInnerHTML={{ __html: body! }} />
           <Link 
             to={link?.path!} 
             className="mt-8 p-4 w-fit"

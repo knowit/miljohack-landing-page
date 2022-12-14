@@ -9,9 +9,7 @@ const Section: React.FC<SectionProps> = ({ alternate = false, ...props }) => {
       {!alternate && <PlaceholderArt />}
       <div className="w-1/2 flex flex-col gap-4">
         <h1 className="text-5xl text-green">{props.heading}</h1>
-        <p className="text-xl">
-          {props.body}
-        </p>
+        <div className="text-xl" dangerouslySetInnerHTML={{ __html: props.body! }} />
         <Link to={props.link!.path!} className="text-2xl underline text-center p-4" >{props.link?.text}</Link> 
       </div>
       {alternate && <PlaceholderArt />}

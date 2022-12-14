@@ -1,7 +1,7 @@
 sections:
   - heading: Sitter du på en problemstilling innenfor bærekraft, miljø eller klima?
     subheading: 16. til 19 mars 2023
-    body: >
+    body: !markdown |
       Vi inviterer din bedrift til å levere og presentere interessante miljørelaterte problemstillinger for deltakerne.
     link:
       text: Send din søknad
@@ -9,15 +9,15 @@ sections:
     type: HERO
 
   - heading: Hva er Miljøhack?
-    body: >
+    body: !markdown |
       Miljøhack er et hackathon hvor Knowits ansatte jobber dedikert i tverrfaglige team med å løse miljørelaterte problemstillinger. Ved å bruke kunnskapen på tvers av design og utcikling kan man komme frem til løsninger som ikke bare løser problemene til folk, men også kloden.
     link:
       text: Les om miljøhack 2023
-      path: '/2023'
+      path: '/deltakere'
     type: NORMAL
 
   - heading: Miljøcaser
-    body: >
+    body: !markdown |
       Casene er reelle problemstillinger som alle er relatert til bærekraft og miljø. Casene tillater rom for kreativitet og tverrfaglig arbeid, der man sammen i et team jobber med en hittil uløst problemstilling eller utfordring for ulike spennende kunder. Løsningene man kommer frem til har som mål å bidra positivt til å gjøre verden et bedre sted. Alt som arbeide som gjøres i forbindelse miljøhack er Open Source og eies ikke av noen.
     link:
       text: Les mer om de ulike casene
@@ -25,21 +25,20 @@ sections:
     type: NORMAL
 
   - heading: Utdeling av premier
-    body: >
+    body: !markdown |
       Under hackathonet kan deltakerene samle poeng via badges og awards. Bidrag til badges levers til programkomiteen som bestemmer om løsningen er god nok til å gi poeng. Vinnerlaget er de som til slutt stpr igjen med flest poeng.
     link:
       text: Les om badges og premier
-      path: '/badges'
+      path: '/badges-og-awards'
     type: NORMAL
 
 quote: Ikke bare bla, bla, bla, men designtenking, sirkulærøkonomi, økologisk koding, miljøtilpasning og gjenbruk
 
 cards:
-  - body: |
+  - body: !markdown |
       Er du designer, utvikler, potet eller har en annen rolle i Knowit? Alle er velkomne til å delta
 
       Miljøhack 2023 vil foregå fra 16. til 19. mars på Quality Hotel Entry på Trollåsen, Kolbotn
-
     link:
       text: 'Påmelding kommer snart...'
       path: null
