@@ -13,7 +13,7 @@ sections:
       Miljøhack er et hackathon hvor Knowits ansatte jobber dedikert i tverrfaglige team med å løse miljørelaterte problemstillinger. Ved å bruke kunnskapen på tvers av design og utcikling kan man komme frem til løsninger som ikke bare løser problemene til folk, men også kloden.
     link:
       text: Les om miljøhack 2023
-      path: '/2023'
+      path: '/deltakere'
     type: NORMAL
 
   - heading: Miljøcaser
