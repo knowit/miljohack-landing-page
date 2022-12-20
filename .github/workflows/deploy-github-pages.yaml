@@ -16,6 +16,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: npm
+      
+      - name: Setup pages
+        uses: actions/configure-pages@v2
+        with:
+          static_site_generator: gatsby
       
       - name: Install dependencies
         run: npm ci
