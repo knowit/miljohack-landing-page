@@ -5,7 +5,7 @@ sections:
       Vi inviterer din bedrift til å levere og presentere interessante miljørelaterte problemstillinger for deltakerne.
     link:
       text: Send din søknad
-      path: /soknad
+      path: https://info.knowit.no/innsendelse-caser-milj%C3%B8hack-2023
     type: HERO
 
   - heading: Hva er Miljøhack?
@@ -21,7 +21,7 @@ sections:
       Casene er reelle problemstillinger som alle er relatert til bærekraft og miljø. Casene tillater rom for kreativitet og tverrfaglig arbeid, der man sammen i et team jobber med en hittil uløst problemstilling eller utfordring for ulike spennende kunder. Løsningene man kommer frem til har som mål å bidra positivt til å gjøre verden et bedre sted. Alt som arbeide som gjøres i forbindelse miljøhack er Open Source og eies ikke av noen.
     link:
       text: Les mer om de ulike casene
-      path: '/cases'
+      path: '/caser'
     type: NORMAL
 
   - heading: Utdeling av premier
@@ -40,5 +40,5 @@ cards:
 
       Miljøhack 2023 vil foregå fra 16. til 19. mars på Quality Hotel Entry på Trollåsen, Kolbotn
     link:
-      text: 'Påmelding kommer snart...'
-      path: null
+      text: Meld deg på her!
+      path: https://info.knowit.no/milj%C3%B8hack-p%C3%A5melding-2023

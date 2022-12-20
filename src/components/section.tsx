@@ -1,16 +1,18 @@
 import * as React from 'react';
 import Link from './util/Link';
 
-type SectionProps = Queries.FrontpageSections & { alternate?: boolean }
+type SectionProps = Queries.Section & { alternate?: boolean };
 
-const Section: React.FC<SectionProps> = ({ alternate = false, ...props }) => {
+const Section: React.FC<SectionProps> = ({ alternate = false, type = 'NORMAL', ...props }) => {
   return (
     <div className="flex gap-16 my-16 py-16">
       {!alternate && <PlaceholderArt />}
-      <div className="w-1/2 flex flex-col gap-4">
+      <div className="w-1/2">
         <h1 className="text-5xl text-green">{props.heading}</h1>
-        <div className="text-xl" dangerouslySetInnerHTML={{ __html: props.body! }} />
-        <Link to={props.link!.path!} className="text-2xl underline text-center p-4" >{props.link?.text}</Link> 
+        <div className="markdown" dangerouslySetInnerHTML={{ __html: props.body! }} />
+        <Link to={props.link!.path!} className="text-2xl underline text-center p-4">
+          {props.link?.text}
+        </Link>
       </div>
       {alternate && <PlaceholderArt />}
     </div>

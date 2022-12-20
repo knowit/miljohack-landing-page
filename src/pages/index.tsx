@@ -24,8 +24,8 @@ const IndexPage: React.FC<PageProps<Queries.FrontpageQuery>> = ({ data }) => {
           .filter((sectionProps) => !!sectionProps)
           .map((sectionProps, i) => sectionProps && <Section alternate={Boolean(i % 2)} {...sectionProps} />)}
       </div>
-      { data.frontpage?.quote && <Quote text={data.frontpage.quote} />}
-      { data.frontpage?.cards?.map((cardProps) => cardProps && <Card {...cardProps} />) }
+      {data.frontpage?.quote && <Quote text={data.frontpage.quote} />}
+      {data.frontpage?.cards?.map((cardProps) => cardProps && <Card {...cardProps} />)}
     </Layout>
   );
 };

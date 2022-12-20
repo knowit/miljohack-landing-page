@@ -2,19 +2,17 @@ import * as React from 'react';
 import { splitByNumWords } from '../utils';
 import Link from './util/Link';
 
-const HeroSection: React.FC<Queries.FrontpageSections> = (props) => {
+const HeroSection: React.FC<Queries.Section> = (props) => {
   const headingArray = splitByNumWords(props.heading ?? '', 5);
 
   return (
-    <div className="mb-72">
-      <div>
-        <h1 className="text-7xl text-green font-bold">
-          {headingArray[0] + ' '}
-          <span className="text-green-dark">{headingArray[1]}</span>
-        </h1>
-        <p className="text-red">{props.subheading}</p>
-      </div>
-      <div className="flex gap-16 mt-16">
+    <div>
+      <h1 className="text-7xl text-green font-bold">
+        {headingArray[0] + ' '}
+        <span className="text-green-dark">{headingArray[1]}</span>
+      </h1>
+      <p className="text-red">{props.subheading}</p>
+      <div className="flex gap-16 my-32">
         <svg width="312" height="207" viewBox="0 0 312 207" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="4" y="4" width="304" height="121" fill="#1E1E1E" stroke="#B7DEBD" stroke-width="8" />
           <path
