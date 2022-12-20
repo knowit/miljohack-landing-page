@@ -3,12 +3,21 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply bg-gray-dark;
-        @apply text-gray-light
-    }
+  body {
+    @apply bg-gray-dark text-gray-light;
+  }
 
-    html {
-        font-family: 'Arial'
-    }
+  html {
+    font-family: 'Arial';
+  }
+}
+
+@layer components {
+  .markdown p {
+    @apply my-4 text-xl;
+  }
+
+  .markdown a {
+    @apply underline;
+  }
 }

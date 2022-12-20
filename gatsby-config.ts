@@ -23,6 +23,9 @@ const config: GatsbyConfig = {
           if (name === 'index') {
             return 'Frontpage';
           }
+          if (name === 'infopages') {
+            return 'Infopage';
+          }
           return name;
         }
       }
