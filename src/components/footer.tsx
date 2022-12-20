@@ -2,9 +2,11 @@ import * as React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex flex-col items-center my-16 gap-16">
-      <Icon />
-      <p className="text-center">Denne nettsiden er optimalisert for å bruke mindre energi.</p>
+    <footer className="aboslute bottom-0 left-0 mt-32 mb-16 w-full">
+      <div className='w-fit m-auto'>
+        <Icon />
+      </div>
+      <p className="text-center mt-8">Denne nettsiden er optimalisert for å bruke mindre energi.</p>
     </footer>
   );
 };
