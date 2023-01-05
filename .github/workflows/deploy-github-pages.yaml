@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - "main"
+  workflow_dispatch:
 
 jobs:
   build:
@@ -11,29 +12,32 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-      
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: npm
-      
+
       - name: Setup pages
         uses: actions/configure-pages@v2
         with:
           static_site_generator: gatsby
-      
+
+      - name: Install never npm
+        run: npm install -g npm@9.2.0
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Build
         run: npm run build
-      
+
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: public
-  
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
