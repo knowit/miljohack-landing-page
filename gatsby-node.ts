@@ -3,11 +3,49 @@ import { CreateSchemaCustomizationArgs } from 'gatsby';
 export const createSchemaCustomization = ({ actions }: CreateSchemaCustomizationArgs) => {
   const { createTypes } = actions;
 
-  // Explicitly define path such that a single null can exist
-  const FrontpageCardsLinkType = `
-    type FrontpageCardsLink implements Node {
+  // Define som common types
+  const CommonTypes = `
+    type Link {
+      text: String!
       path: String
     }
+
+    type Section {
+      heading: String!
+      subheading: String
+      body: String!
+      link: Link
+      type: String!
+    }
   `;
-  createTypes([FrontpageCardsLinkType]);
+
+  const FrontpageType = `
+    type Frontpage implements Node {
+      sections: [Section]!
+    }
+  `;
+
+  const FrontpageSectionsType = `
+    type FrontpageSections {
+      link: Link
+    }
+  `;
+
+  const FrontpageCardsType = `
+    type FrontpageCards {
+      link: Link
+    }
+  `;
+
+  const InfopageType = `
+    type Infopage implements Node {
+      heading: String!
+      subheading: String!
+      body: String!
+      link: Link
+      sections: [Section]
+    }
+  `;
+
+  createTypes([CommonTypes, FrontpageType, FrontpageCardsType, InfopageType]);
 };

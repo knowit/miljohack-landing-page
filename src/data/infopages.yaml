@@ -2,11 +2,9 @@
   subheading: Vi vil løse deres miljøutfordringer 16-19 mars 2023!
   slug: /caser
   body: !markdown |
-    # Vi vil løse deres miljøutfordringer 16-19 mars 2023!
-
     Miljøhack er et hackathon hvor Knowits ansatte jobber dedikert i tverrfaglige team med å løse miljørelaterte problemstillinger. Ved å bruke kunnskapen på tvers av design og utvikling kan man komme frem til løsninger som ikke bare løser problemene til folk, men også kloden.
 
-    Har du spørsmål? Send en mail til [miljohack@knowit.no](mailto:miljohack@knowit.no)
+    Har du spørsmål? Send en mail til [**miljohack@knowit.no**](mailto:miljohack@knowit.no)
   link:
     text: Send inn din miljøcase her
     path: "/"
@@ -19,13 +17,13 @@
 
     Casene som skal løses blir presentert på et fellesmøte på nyåret. Det blir satt opp stream for de som ikke kan delta fysisk. Lagene vil bli satt sammen av komiteen slik at alle teamene vil ha en god spredning i kompetanse. Det blir stort fokus på tverrfaglighet, faglig moro og det sosiale.
 
-    **Når:** 16-19. Mars
-    **Hvor:** [Quality Hotel Entry Mastemyr](https://goo.gl/maps/BcRcxNvV452LnoJj9)
-    **Hvordan:** Avklar med kunde og nærmeste ledere - og meld deg på!
-    **Antall plasser:**: Maks 45
-    **Søknadsfrist:** 1. Februar 2023
-    **Slack:** For løpende info, se #infokanal-miljohack2023
-    Har du andre spørsmål? Send en mail til [miljohack@knowit.no](mailto:miljohac@knowit.no)
+    - **Når:** 16-19. Mars
+    - **Hvor:** [Quality Hotel Entry Mastemyr](https://goo.gl/maps/BcRcxNvV452LnoJj9)
+    - **Hvordan:** Avklar med kunde og nærmeste ledere - og meld deg på!
+    - **Antall plasser:**: Maks 45
+    - **Søknadsfrist:** 1. Februar 2023
+    - **Slack:** For løpende info, se #infokanal-miljohack2023
+    - Har du andre spørsmål? Send en mail til [miljohack@knowit.no](mailto:miljohac@knowit.no)
 
     _OBS! Vi operer etter førstmemann-til-mølla prinsippet. Husk at vi kun har 45 plasser, og du er ikke garantert å få være med før du mottar endelig bekreftelse. Etter 1. Februar 2023 vil påmeldingen for deg som har fått bekreftet plass være bindende_
   sections:
@@ -34,6 +32,7 @@
       link:
         text: Les mer om Knowit Miljøhack 2021
         path: /
+      type: NORMAL
 - heading: Konkurranseformat
   subheading: Måtte den beste løsningen vinne
   slug: /badges-og-awards
