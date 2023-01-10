@@ -26,7 +26,7 @@ sections:
 
   - heading: Utdeling av premier
     body: !markdown |
-      Under hackathonet kan deltakerene samle poeng via badges og awards. Bidrag til badges levers til programkomiteen som bestemmer om løsningen er god nok til å gi poeng. Vinnerlaget er de som til slutt stpr igjen med flest poeng.
+      Under hackathonet kan deltakerene samle poeng via badges og awards. Bidrag til badges levers til programkomiteen som bestemmer om løsningen er god nok til å gi poeng. Vinnerlaget er de som til slutt står igjen med flest poeng.
     link:
       text: Les om badges og premier
       path: '/badges-og-awards'
