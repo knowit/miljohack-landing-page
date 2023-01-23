@@ -6,18 +6,18 @@ type CardProps = Queries.FrontpageCards;
 const Card: React.FC<CardProps> = ({ body, link }) => {
   return (
     <div className="flex border-t-8 border-l-8 border-green my-16">
-      <div className="relative text-2xl font-bold m-8">
+      <div className="text-2xl font-bold m-8">
         <div className="text-2xl text-green" dangerouslySetInnerHTML={{ __html: body! }} />
         <Link
           to={link?.path!}
-          className="absolute bottom-0 mt-8 p-4 w-fit"
+          className=" bottom-0 mt-8 p-4 w-fit"
           activeClassName="bg-green text-gray-dark underline"
           disabledClassName="border text-green"
         >
           {link?.text}
         </Link>
       </div>
-      <div className="m-8">
+      <div className="m-auto">
         <Icon />
       </div>
     </div>

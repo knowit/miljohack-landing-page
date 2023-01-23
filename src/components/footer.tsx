@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="aboslute bottom-0 left-0 mt-32 mb-16 w-full">
+    <footer className="aboslute bottom-0 left-0 mt-64 mb-32 w-full">
       <div className='w-fit m-auto'>
         <Icon />
       </div>

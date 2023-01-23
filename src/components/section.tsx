@@ -5,12 +5,12 @@ type SectionProps = Queries.Section & { alternate?: boolean };
 
 const Section: React.FC<SectionProps> = ({ alternate = false, type = 'NORMAL', ...props }) => {
   return (
-    <div className="flex gap-16 my-16 py-16">
+    <div className="flex gap-8 py-32">
       {!alternate && <PlaceholderArt />}
       <div className="w-1/2">
         <h1 className="text-5xl text-green">{props.heading}</h1>
         <div className="markdown" dangerouslySetInnerHTML={{ __html: props.body! }} />
-        <Link to={props.link!.path!} className="text-2xl underline text-center p-4">
+        <Link to={props.link!.path!} className="text-2xl underline py-4">
           {props.link?.text}
         </Link>
       </div>
