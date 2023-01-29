@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+  html,
+  body,
+  #___gatsby,
+  #gatsby-focus-wrapper {
+    @apply h-full;
+  }
+
   body {
     @apply bg-gray-dark text-gray-light;
   }
