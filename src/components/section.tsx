@@ -4,24 +4,28 @@ import Link from './util/Link';
 type SectionProps = Queries.Section & { alternate?: boolean };
 
 const Section: React.FC<SectionProps> = ({ alternate = false, type = 'NORMAL', ...props }) => {
+
+  const flexClasses = alternate ? "flex flex-col md:flex-row" : "flex flex-col md:flex-row-reverse"
+
   return (
-    <div className="flex gap-16 my-16 py-16">
-      {!alternate && <PlaceholderArt />}
-      <div className="w-1/2">
-        <h1 className="text-5xl text-green">{props.heading}</h1>
+    <div className={`${flexClasses} gap-8 py-16 md:py-32`} >
+      <div className='w-full md:w-1/2'>
+        <PlaceholderArt />
+      </div>
+      <div className="md:w-1/2">
+        <h1 className="text-4xl md:text-5xl text-green font-bold">{props.heading}</h1>
         <div className="markdown" dangerouslySetInnerHTML={{ __html: props.body! }} />
-        <Link to={props.link!.path!} className="text-2xl underline text-center p-4">
+        <Link to={props.link!.path!} className="text-2xl underline py-4">
           {props.link?.text}
         </Link>
       </div>
-      {alternate && <PlaceholderArt />}
     </div>
   );
 };
 
 const PlaceholderArt: React.FC = () => {
   return (
-    <svg width="546" height="376" viewBox="0 0 546 376" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 546 376" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M14.9753 314.024L17.1521 324.925C17.3161 325.758 17.4875 326.607 17.6739 327.447C19.4933 327.071 21.3796 327.176 23.1457 327.753C21.7445 329.751 20.4889 331.847 19.3885 334.025C20.7602 338.245 22.7729 342.144 26.1425 344.964C28.3929 346.806 31.0808 348.037 33.9469 348.54C36.813 349.044 39.7607 348.801 42.5055 347.836L42.4086 347.405C46.0316 340.388 44.0636 331.54 39.5609 325.059C37.2644 321.861 34.5434 318.99 31.4726 316.524C28.4311 313.994 25.1435 311.724 21.8858 309.484C21.1541 308.982 20.2891 308.709 19.4011 308.7C18.5132 308.691 17.6427 308.946 16.9009 309.434C16.1591 309.921 15.5797 310.618 15.2367 311.435C14.8937 312.253 14.8027 313.154 14.9753 314.024Z"
         fill="#7C3647"
