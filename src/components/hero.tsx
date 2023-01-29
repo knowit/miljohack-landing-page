@@ -7,13 +7,13 @@ const HeroSection: React.FC<Queries.Section> = (props) => {
 
   return (
     <div>
-      <h1 className="text-7xl text-green font-bold">
+      <h1 className="text-4xl md:text-7xl text-green font-bold">
         {headingArray[0] + ' '}
         <span className="text-green-dark">{headingArray[1]}</span>
       </h1>
-      <p className="text-2xl text-red mt-4">{props.subheading}</p>
-      <div className="flex gap-16 my-32">
-        <div className="m-4">
+      <p className="text-xl md:text-2xl text-red mt-4">{props.subheading}</p>
+      <div className="flex flex-col md:flex-row gap-16 my-32">
+        <div className="md:m-4">
           <Icon />
         </div>
         <div className="text-2xl font-bold">

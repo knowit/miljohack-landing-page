@@ -16,7 +16,7 @@ const IndexPage: React.FC<PageProps<Queries.FrontpageQuery>> = ({ data }) => {
 
   return (
     <Layout>
-      <div className="divide-y-8 divide-green">
+      <div className="divide-y-4 md:divide-y-8 divide-green">
         {heroSections
           .filter((heroProps) => !!heroProps)
           .map((heroProps) => heroProps && <HeroSection {...heroProps} />)}
