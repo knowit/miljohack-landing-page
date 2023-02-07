@@ -4,8 +4,8 @@
 const jsYaml = require(`js-yaml`);
 const _ = require(`lodash`);
 const path = require(`path`);
-const remark = require("remark");
-const remarkHtml = require("remark-html");
+const remark = require('remark');
+const remarkHtml = require('remark-html');
 
 exports.shouldOnCreateNode = ({ node }) => {
   return node.internal.mediaType === `text/yaml`;
@@ -44,10 +44,11 @@ exports.onCreateNode = async ({ node, actions, loadNodeContent, createNodeId, cr
         type
       }
     };
+
     if (obj.id) {
       yamlNode[`yamlId`] = obj.id;
     }
-    console.log(yamlNode)
+
     createNode(yamlNode);
     createParentChildLink({ parent: node, child: yamlNode });
   }
@@ -55,7 +56,6 @@ exports.onCreateNode = async ({ node, actions, loadNodeContent, createNodeId, cr
   const { createNode, createParentChildLink } = actions;
 
   const content = await loadNodeContent(node);
-
 
   const schema = jsYaml.Schema.create(jsYaml.DEFAULT_SCHEMA, [MardownType]);
   const parsedContent = jsYaml.load(content, { schema });
