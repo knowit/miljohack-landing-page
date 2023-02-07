@@ -1,16 +1,16 @@
 sections:
-  - heading: Sitter du på en problemstilling innenfor bærekraft, miljø eller klima?
-    subheading: 16. til 19 mars 2023
+  - heading: Miljøhack 2023 er dessverre utsatt til høsten 2023
+    subheading: Utsatt
     body: !markdown |
-      Er du ansatt i Knowit og ønsker å delta? Vi har fortsatt ledige plasser!
+      Vi har jobbet hard for å lage et så godt arrangement som mulig, men på grunn av manglende tverrfaglighet har vi dessverre sett oss nødt til å utsette årets Miljøhack. Vi tar med oss casene vi har fått inn så langt og kommer sterkere tilbake til høsten!
     link:
-      text: Meld deg på her!
-      path: https://info.knowit.no/milj%C3%B8hack-p%C3%A5melding-2023
+      text: Ny påmelding kommer...
+      path: null
     type: HERO
 
   - heading: Hva er Miljøhack?
     body: !markdown |
-      Miljøhack er et hackathon hvor Knowits ansatte jobber dedikert i tverrfaglige team med å løse miljørelaterte problemstillinger. Ved å bruke kunnskapen på tvers av design og utcikling kan man komme frem til løsninger som ikke bare løser problemene til folk, men også kloden.
+      Miljøhack er et hackathon hvor Knowits ansatte jobber dedikert i tverrfaglige team med å løse miljørelaterte problemstillinger. Ved å bruke kunnskapen på tvers av design og utvikling kan man komme frem til løsninger som ikke bare løser problemene til folk, men også kloden.
     link:
       text: Les om miljøhack 2023
       path: '/deltakere'
@@ -38,7 +38,7 @@ cards:
   - body: !markdown |
       Er du designer, utvikler, potet eller har en annen rolle i Knowit? Alle er velkomne til å delta
 
-      Miljøhack 2023 vil foregå fra 16. til 19. mars på Quality Hotel Entry på Trollåsen, Kolbotn
+      Miljøhack 2023 vil foregå en gang i løpet av høsten på Quality Hotel Entry på Trollåsen, Kolbotn
     link:
-      text: Meld deg på her!
-      path: https://info.knowit.no/milj%C3%B8hack-p%C3%A5melding-2023
+      text: Påmelding kommer...
+      path: null
